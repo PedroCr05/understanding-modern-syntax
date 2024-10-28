@@ -11,7 +11,13 @@ function copyAndPasteMe() {
 
   console.log(
     `
-    -=|{Break in between out console logs}|=-
+    -=|{Break in between example & exercise.}|=-
+    `
+  );
+
+  console.log(
+    `
+    -=|{Break in between output console logs}|=-
     `
   );
 }
@@ -34,6 +40,12 @@ function exercise1() {
   console.log(example2);
 
   // ----------------------------------------------------------------
+
+  console.log(
+    `
+    -=|{Break in between example & exercise.}|=-
+    `
+  );
 
   // Use `.map()` to iterate over the following array:
   const nums = [13, 87, 2, 89, 12, 4, 90, 63];
@@ -66,6 +78,12 @@ function exercise2() {
   console.log(petExample[1]); // Same line from 43. Will be the name that holds from secondPetNameExample | `Snuffles`
 
   // ----------------------------------------------------------------
+
+  console.log(
+    `
+    -=|{Break in between example & exercise.}|=-
+    `
+  );
 
   // Given the following array, use destructuring to pull out the first and second values and place them into variables. Log both variables.
 
@@ -103,7 +121,7 @@ function exercise2() {
 
   console.log(
     `
-    -=|{Break in between out console logs}|=-
+    -=|{Break in between output console logs}|=-
     `
   );
 
@@ -150,36 +168,160 @@ function exercise3() {
 
   // ----------------------------------------------------------------
 
+  console.log(
+    `
+    -=|{Break in between example & exercise.}|=-
+    `
+  );
+
   // Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
 
-  const favoriteCar = {
+  const favoriteCarInfo = {
     make: `Audi`,
     model: `q5`,
     year: 2009,
     isHybrid: true,
   };
 
-  const { make, model, year, isHybrid } = favoriteCar;
+  const { make, model, year, isHybrid } = favoriteCarInfo;
 
-  console.log();
-  console.log();
-  console.log();
-  console.log();
+  console.log(`Calling objects from favoriteCarInfo: ${favoriteCarInfo.make}`);
+  console.log(`Calling objects from favoriteCarInfo: ${favoriteCarInfo.model}`);
+  console.log(`Calling objects from favoriteCarInfo: ${favoriteCarInfo.year}`);
+  console.log(
+    `Calling objects from favoriteCarInfo: ${favoriteCarInfo.isHybrid}`
+  );
 
-  console.log();
+  console.log(
+    `
+    -=|{Break in between output console logs}|=-
+    `
+  );
 
-  console.log();
-  console.log();
-  console.log();
-  console.log();
+  console.log(
+    `Calling the objects but by the deconstructed variables: ${make}`
+  );
+  console.log(
+    `Calling the objects but by the deconstructed variables: ${model}`
+  );
+  console.log(
+    `Calling the objects but by the deconstructed variables: ${year}`
+  );
+  console.log(
+    `Calling the objects but by the deconstructed variables: ${isHybrid}`
+  );
 }
 
+function exercise4() {
+  console.log(
+    `
+    ===========================================
+    ========[New Render for Exercise 4]========
+    ===========================================
+    `
+  );
+
+  // const originalArray = [1, 2, 3];
+  // const duplicateArray = [...originalArray];
+
+  // console.log(duplicateArray); // [1, 2, 3]
+
+  const originalArray = [1, 2, 3];
+  const referenceArray = originalArray; // referenceArray is now a reference to originalArray
+
+  referenceArray.push(4); // Modifying referenceArray also modifies originalArray
+  console.log(originalArray); // [1, 2, 3, 4]
+
+  console.log(
+    `
+    -=|{Break in between example1 & example2.}|=-
+    `
+  );
+
+  const fruits = ["apple", "orange", "banana"];
+  const vegetables = ["broccoli", "carrot", "spinach"];
+
+  const fruitsAndVegetables = [...fruits, ...vegetables];
+
+  console.log(fruitsAndVegetables); // ['apple', 'orange', 'banana', 'broccoli', 'carrot', 'spinach']
+
+  // ----------------------------------------------------------------
+
+  console.log(
+    `
+    -=|{Break in between example & exercise.}|=-
+    `
+  );
+
+  // Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
+  const contentPlatforms2020 = [` Twitch`, ` Discord`, ` Youtube`, ` Mixer`];
+  console.log(`Main array with no changes: ${contentPlatforms2020}`);
+
+  console.log(
+    `
+    -=|{---}|=-
+    `
+  );
+
+  const contentPlatforms2024 = [...contentPlatforms2020];
+  console.log(
+    `Using spread to duplicate and rename our array: ${contentPlatforms2024}`
+  );
+
+  console.log(
+    `
+    -=|{---}|=-
+    `
+  );
+
+  contentPlatforms2024.pop();
+  console.log(
+    `Now removing Mixer with ".pop(4)" from our away within our duplicated array: ${contentPlatforms2024}`
+  );
+
+  console.log(
+    `
+    -=|{---}|=-
+    `
+  );
+
+  contentPlatforms2024.push(` Tiktok`);
+  console.log(
+    `This time using ".push() to add onto our updated information: ${contentPlatforms2024}`
+  );
+
+  console.log(
+    `
+    -=|{---}|=-
+    `
+  );
+
+  contentPlatforms2024.reverse();
+  console.log(
+    `Just using ".reverse()" to make tiktok the first option while twitch is the last one ${contentPlatforms2024}`
+  );
+
+  console.log(
+    `
+    -=|{Break in between output console logs}|=-
+    `
+  );
+
+  const beforeAndAfter = [...contentPlatforms2020, ...contentPlatforms2024];
+
+  console.log(
+    `Now comparing both years (first four: 2020 | second four: 2024): ${beforeAndAfter}`
+  );
+}
+
+function exercise5() {}
+
 function run() {
-  // exercise1;
-  // exercise2;
-  exercise3();
-  // exercise4;
-  // exercise5;
+  // exercise1();
+  // exercise2();
+  // exercise3();
+  // exercise4();
+  exercise5();
   // exercise6;
   // exercise7;
   // exercise8;
