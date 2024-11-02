@@ -1,0 +1,13 @@
+{
+  "name": "understanding-modern-syntax",
+  "version": "1.0.0",
+  "description": "React huh? Oh boy... brain going boom!",
+  "main": "modern-syntaxing.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
