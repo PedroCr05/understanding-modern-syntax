@@ -7,6 +7,8 @@ import exercise6 from "./exerciseFolders/exercise6.js";
 import exercise7 from "./exerciseFolders/exercise7/exercise7.js";
 import exercise8 from "./exerciseFolders/exercise8.js";
 import exercise9 from "./exerciseFolders/exercise9.js";
+import exercise10 from "./exerciseFolders/exercise10.js";
+import exercise11 from "./exerciseFolders/exercise11.js";
 
 function copyAndPasteBin() {
   console.log(
@@ -48,8 +50,8 @@ function run() {
   exercise7;
   exercise8;
   exercise9;
-  // exercise10;
-  // exercise11;
+  exercise10;
+  exercise11;
 }
 
 run();
