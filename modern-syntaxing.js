@@ -10,36 +10,6 @@ import exercise9 from "./exerciseFolders/exercise9.js";
 import exercise10 from "./exerciseFolders/exercise10.js";
 import exercise11 from "./exerciseFolders/exercise11.js";
 
-function copyAndPasteBin() {
-  console.log(
-    `
-    ===========================================
-    ========[New Render for Exercise X]========
-    ===========================================
-    `
-  );
-
-  // ----------------------------------------------------------------
-
-  console.log(
-    `
-    -=|{Break in between example & exercise.}|=-
-    `
-  );
-
-  console.log(
-    `
-    -=|{---}|=-
-    `
-  );
-
-  console.log(
-    `
-    -=|{Break in between output console logs}|=-
-    `
-  );
-}
-
 function run() {
   exercise1;
   exercise2;
